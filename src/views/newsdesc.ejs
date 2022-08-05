@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Complete article</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/newsdesc.css'>
+
+</head>
+
+<body>
+    <%- include("partials/navbar.ejs") %>
+
+        <div class="news-container">
+            <div class="news">
+                <!-- <% articles.forEach(function(article,index){ %>
+                    <p>Published: <%- article.publishedAt %></p>
+                    <img src="<%- article.urlToImage %>" alt="Image">
+                    <h3>
+                        <%- article.title %>
+                    </h3>
+                    <p>Author: <%- article.author %> </p>
+                    <p>
+                        <%- article.content.replace(/<[^>]+>/g, '') %>
+                    </p>
+                    <a href="<%- article.url %>">More info</a>
+                    <% }) %> -->
+            </div>
+            <div class="morenews">
+                
+            </div>
+
+        </div>
+        <footer>
+            <div class="info">
+                <p>Developer: Andrés Moncada</p>
+            </div>
+            <div class="time">
+                <p>Weather on Cali, Colombia:  <%= des %>. Temperature on kelvin:  <%= temp %>  </p>
+            </div>
+        </footer>
+</body>
+
+</html>

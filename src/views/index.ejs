@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <%- include("partials/navbar.ejs") %>
+
+    <div class="news-container ">
+      <div class="news">
+
+        <%- articles.forEach(function(article,index){ %>
+
+          <% if ((typeof article.url=='object' ) || (typeof article.title=='object' ) || (typeof
+            article.urlToImage=='object' ) || (typeof article.content=='object' )){ %>
+            <% } else{ %>
+              <a href="/article/?title=<%- article.title %>" target="_self" class="news-box Hover-effect">
+
+                <img src="<%- article.urlToImage %>" alt="Image">
+                <h3>   <%- article.title %>   </h3>
+
+                <p>  <%- article.content.replace(/<[^>]+>/g, '') %>  </p>
+              </a>
+              <% } %>
+                <% }) %>
+      </div>
+    </div>
+    <footer>
+      <div class="info">
+        <p>Developer: Andrés Moncada</p>
+      </div>
+      <div class="time">
+        <p>Weather on Cali, Colombia: <%= des %>. Temperature on kelvin: <%= temp %>
+        </p>
+      </div>
+    </footer>
+</body>
+
+</html>

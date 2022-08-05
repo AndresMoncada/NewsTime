@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+    background: #b2c2ca;
+    padding: auto;
+}
+
+/* Start Navigation Bar */
+
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #25283d;
+    border-radius: 20px;
+}
+
+.navbar .menu {
+    position: relative;
+    display: flex;
+}
+
+.navbar .menu li {
+    display: flex;
+    transition: background-color .5s ease;
+    text-align: center;
+    flex: 1;
+}
+
+.navbar .menu a {
+    position: relative;
+    display: inline-flex;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar .menu a>.fa {
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.navbar .menu a:hover {
+    background-color: #8f3985;
+    border-radius: 20px;
+}
+
+.navbar .menu li:hover .container {
+    display: flex;
+}
+
+#controlsesion{
+    margin: auto;
+    display: block;
+    float: right;
+}
+#controlsesion a{
+    padding: 15px 32px;
+    background-color: #8f3985;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+}
+#tabla {
+	background-color: #fff;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+	position: fixed;
+}
+table{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 15px;
+}
+
+table td{
+    padding: 5px;
+}
+
+table thead {
+    background-color: #25283d;
+    color: #fff;
+    height: 40px;
+    border-radius: 10px;
+}
+
+table tbody tr:nth-child(even){
+    background-color: #d9dceb;
+}

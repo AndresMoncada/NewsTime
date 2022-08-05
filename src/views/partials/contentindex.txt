@@ -1,0 +1,15 @@
+
+        <!-- <%- articles.forEach(function(article,index){ %>
+
+          <% if ((typeof article.url=='object' ) || (typeof article.title=='object' ) || (typeof
+            article.urlToImage=='object' ) || (typeof article.content=='object' )){ %>
+            <% } else{ %>
+              <a href="/article/?title=<%- article.title %>" target="_self" class="news-box Hover-effect">
+
+                <img src="<%- article.urlToImage %>" alt="Image">
+                <h3>   <%- article.title %>   </h3>
+
+                <p>  <%- article.content.replace(/<[^>]+>/g, '') %>  </p>
+              </a>
+              <% } %>
+                <% }) %> -->
